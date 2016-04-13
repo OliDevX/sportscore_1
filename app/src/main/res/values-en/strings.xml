@@ -1,8 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">SportScore</string>
     <string name="action_settings">Settings</string>
-    <string name="digit_one" translatable="false">1</string>
-    <string name="digit_zero" translatable="false">0</string>
     <string name="home_label_string">HOME</string>
     <string name="visit_label_string">VISIT</string>
     <string name="set_label_string">SET</string>

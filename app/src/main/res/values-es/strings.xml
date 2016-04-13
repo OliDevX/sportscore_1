@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Ajustes</string>
+    <string name="home_label_string">LOCAL</string>
+    <string name="visit_label_string">VISITANTE</string>
+    <string name="set_label_string">PERIODO</string>
+</resources>
