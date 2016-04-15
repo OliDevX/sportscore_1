@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Set listener to home_layout & vist_layout
+        // Set listener to home_layout & visit_layout
         View mLayoutHome = (View) findViewById(R.id.home_layout);
         View mLayoutVisit = (View) findViewById(R.id.visit_layout);
 
