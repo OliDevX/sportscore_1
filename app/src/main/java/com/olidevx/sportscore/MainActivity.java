@@ -19,13 +19,21 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Set listener to home_layout
+        // Set listener to home_layout & vist_layout
         View mLayoutHome = (View) findViewById(R.id.home_layout);
+        View mLayoutVisit = (View) findViewById(R.id.visit_layout);
 
         mLayoutHome.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                // Does Nothing yet;
+                // Does Nothing yet
+            }
+        });
+
+        mLayoutVisit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                // Does Nothing yet
             }
         });
 
