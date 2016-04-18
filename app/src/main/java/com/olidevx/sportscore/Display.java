@@ -13,6 +13,23 @@ public class Display {
     // Declares Score as the holder variable for each display
     public int Points;
 
-    // TODO: Method to transform int Points to 3 strings for each digit
+    public void SetPoints(int points) {
+        Points = points;
+        if (Points < 10) {
+            Digit_1 = Integer.toString(Points);
+            Digit_2 = "0";
+            Digit_3 = "";
+        }
 
+        if ((Points > 10) && (Points < 100)) {
+            // TODO: Include this method to transform 2 digit numbers to 3 strings
+
+
+            Digit_3="";
+        }
+
+        if ((Points > 99) && (Points < 1000)){
+            // TODO: Include this method to transform 3 digit numbers to 3 strings
+        }
+    }
 }

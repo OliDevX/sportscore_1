@@ -1,7 +1,7 @@
 package com.olidevx.sportscore;
 
 /**
- * Created by Armando on 18/04/2016.
+ * Created by Armando Ibarrarán on 18/04/2016.
  */
 public class Game {
     // Declares two teams to play the game
@@ -21,7 +21,12 @@ public class Game {
     }
 
     public void UpdateDisplays(){
-        mDisplay1.Points = mTeam1.mPoints;
-        mDisplay2.Points = mTeam2.mPoints;
+        mDisplay1.SetPoints(mTeam1.mPoints);
+        mDisplay2.SetPoints(mTeam2.mPoints);
+    }
+
+    // ScoreChange method is created to make scorechanges happen and subsecuently trigger all other actions in Team and Display classes
+    public void ScoreChange(){
+        // TODO: Complete ScoreChange method inside Game class
     }
 }
