@@ -12,6 +12,9 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Declares the mGame object that will be used during the program
+    public Game mGame = new Game();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 // Does Nothing yet
             }
         });
+
+        // Initializes the displays to "00" "00"
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
