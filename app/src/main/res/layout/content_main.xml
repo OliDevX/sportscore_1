@@ -56,7 +56,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/TextAppearance.AppCompat.Display3"
-                        android:id="@+id/home_first_digit_textview"
+                        android:id="@+id/home_third_digit_textview"
                         android:text="@string/digit_one" />
 
                     <TextView
@@ -70,7 +70,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/digit_zero"
-                        android:id="@+id/home_third_digit_textview"
+                        android:id="@+id/home_first_digit_textview"
                         style="@style/TextAppearance.AppCompat.Display3" />
                 </LinearLayout>
             </LinearLayout>
@@ -151,22 +151,22 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1"
-                        android:id="@+id/visit_first_digit_textview"
+                        android:text="@string/digit_one"
+                        android:id="@+id/visit_third_digit_textview"
                         style="@style/TextAppearance.AppCompat.Display3" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0"
+                        android:text="@string/digit_zero"
                         android:id="@+id/visit_second_digit_textview"
                         style="@style/TextAppearance.AppCompat.Display3" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0"
-                        android:id="@+id/visit_third_digit_textview"
+                        android:text="@string/digit_zero"
+                        android:id="@+id/visit_first_digit_textview"
                         style="@style/TextAppearance.AppCompat.Display3" />
                 </LinearLayout>
             </LinearLayout>
