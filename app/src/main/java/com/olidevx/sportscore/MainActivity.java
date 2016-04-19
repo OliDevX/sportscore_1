@@ -9,6 +9,7 @@ import android.text.Layout;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Initializes the displays to "00" "00"
-
+        mGame.InitialGameSet();
+        RefreshScreen();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -73,5 +75,16 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void RefreshScreen (){
+        // Declare Displays to be updated
+        TextView mDisplay1_first_digit = (TextView) findViewById(R.id.home_first_digit_textview);
+        TextView mDisplay1_second_digit = (TextView) findViewById(R.id.home_second_digit_textview);
+        TextView mDisplay1_third_digit = (TextView) findViewById(R.id.home_third_digit_textview);
+
+        mDisplay1_first_digit.setText(mGame.mDisp1_digit1);
+        mDisplay1_second_digit.setText(mGame.mDisp1_digit2);
+        mDisplay1_third_digit.setText(mGame.mDisp1_digit3);
     }
 }

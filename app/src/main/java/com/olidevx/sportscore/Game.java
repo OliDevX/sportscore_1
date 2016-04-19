@@ -12,6 +12,12 @@ public class Game {
     public Display mDisplay1 = new Display();
     public Display mDisplay2 = new Display();
 
+    // Declares Strings for each Digit in Displays
+    public String mDisp1_digit1 = new String();
+    public String mDisp1_digit2 = new String();
+    public String mDisp1_digit3 = new String();
+    //TODO: Declare the visit and set digit strings
+
     // Initializes game, puts team's points to zero and calls for display updates
     public void InitialGameSet(){
         // Puts points to "0" on each team
@@ -23,6 +29,10 @@ public class Game {
     public void UpdateDisplays(){
         mDisplay1.SetPoints(mTeam1.mPoints);
         mDisplay2.SetPoints(mTeam2.mPoints);
+
+        mDisp1_digit1 = mDisplay1.Digit_1;
+        mDisp1_digit2 = mDisplay1.Digit_2;
+        mDisp1_digit3 = mDisplay1.Digit_3;
     }
 
     // ScoreChange method is created to make scorechanges happen and subsecuently trigger all other actions in Team and Display classes
