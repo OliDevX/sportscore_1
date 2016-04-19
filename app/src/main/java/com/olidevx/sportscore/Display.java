@@ -21,9 +21,10 @@ public class Display {
             Digit_3 = "";
         }
 
-        if ((Points > 10) && (Points < 100)) {
-
-            // TODO: Completar esta sección
+        if ((Points > 9) && (Points < 100)) {
+            Digit_1 = Integer.toString(Points % 10);
+            Digit_2 = Integer.toString((Points - (Points % 10)/10));
+            Digit_3 = "";
 
         }
     }
