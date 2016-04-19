@@ -22,6 +22,12 @@ public class Team {
         }
     }
 
+    public void onDecreasePoint () {
+        if (mPoints > 0) {
+            mPoints--;
+        }
+    }
+
 
 
 }
