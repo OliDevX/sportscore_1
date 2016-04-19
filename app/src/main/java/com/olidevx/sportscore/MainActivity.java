@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         TextView mDisplay2_second_digit = (TextView) findViewById(R.id.visit_second_digit_textview);
         TextView mDisplay2_third_digit = (TextView) findViewById(R.id.visit_third_digit_textview);
 
-        // TODO: Declare and code for Set Display
+        // TODO: Declare and code for Set Display on the RefeshScreen method
 
         mDisplay1_first_digit.setText(mGame.mDisp1_digit1);
         mDisplay1_second_digit.setText(mGame.mDisp1_digit2);
