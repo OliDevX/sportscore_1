@@ -72,7 +72,7 @@ public class Game {
                     if (bool_increase){
                         mTeam1.onIncreasePoint();
                     } else {
-                        // mTeam1.onDecreasePoint();
+                        mTeam1.onDecreasePoint();
                     }
                     break;
 
@@ -81,7 +81,7 @@ public class Game {
                     if (bool_increase){
                         mTeam2.onIncreasePoint();
                     } else {
-                        // mTeam2.onDecreasePoint;
+                        mTeam2.onDecreasePoint();
                     }
                     break;
             }
