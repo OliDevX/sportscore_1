@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Set listener to home_layout & visit_layout
+        // Set listeners to home_layout & visit_layout
         View mLayoutHome = (View) findViewById(R.id.home_layout);
         View mLayoutVisit = (View) findViewById(R.id.visit_layout);
 
@@ -39,6 +39,19 @@ public class MainActivity extends AppCompatActivity {
 
                 // Then asks to refresh the screen
                 RefreshScreen();
+            }
+        });
+
+        mLayoutHome.setOnLongClickListener(new View.OnLongClickListener(){
+            @Override
+            public boolean onLongClick(View v) {
+                // Invoques the ScoreChange Method passing "1" for the Home Team and "false" to decrease
+                mGame.ScoreChange(1,false);
+
+                // Then asks to refresh the screen
+                RefreshScreen();
+
+                return true;
             }
         });
 

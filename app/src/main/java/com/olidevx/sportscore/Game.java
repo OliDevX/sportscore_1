@@ -25,8 +25,6 @@ public class Game {
     public String mDispSet_digit1 = new String();
     public String mDispSet_digit2 = new String();
 
-    //TODO: Declare the visit and set digit strings
-
     // Initializes game, puts team's points to zero and calls for display updates
     public void InitialGameSet(){
         // Puts points to "0" on each team
@@ -89,6 +87,5 @@ public class Game {
             // After changing the points
             UpdateDisplays();
         }
-        // TODO: Complete this section
     }
 }
