@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         mLayoutVisit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
@@ -66,8 +67,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mLayoutVisit.setOnLongClickListener(new View.OnLongClickListener(){
+            @Override
+            public boolean onLongClick(View v) {
+                // Invoques the ScoreChange Method passing "2" for the Visit Team and "false" to decrease
+                mGame.ScoreChange(2,false);
+
+                // Then asks to refresh the screen
+                RefreshScreen();
+
+                return true;
+            }
+        });
+
         // Initializes the displays to "00" "00"
         mGame.InitialGameSet();
+
+        // Refreshes the displays on screen
         RefreshScreen();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
