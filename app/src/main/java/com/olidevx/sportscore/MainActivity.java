@@ -11,6 +11,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import junit.framework.Test;
+
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity {
 
     // Declares the mGame object that will be used during the program
@@ -83,8 +87,20 @@ public class MainActivity extends AppCompatActivity {
         TextView mDisplay1_second_digit = (TextView) findViewById(R.id.home_second_digit_textview);
         TextView mDisplay1_third_digit = (TextView) findViewById(R.id.home_third_digit_textview);
 
+        TextView mDisplay2_first_digit = (TextView) findViewById(R.id.visit_first_digit_textview);
+        TextView mDisplay2_second_digit = (TextView) findViewById(R.id.visit_second_digit_textview);
+        TextView mDisplay2_third_digit = (TextView) findViewById(R.id.visit_third_digit_textview);
+
+        // TODO: Declare and code for Set Display
+
         mDisplay1_first_digit.setText(mGame.mDisp1_digit1);
         mDisplay1_second_digit.setText(mGame.mDisp1_digit2);
         mDisplay1_third_digit.setText(mGame.mDisp1_digit3);
+
+        mDisplay2_first_digit.setText(mGame.mDisp2_digit1);
+        mDisplay2_second_digit.setText(mGame.mDisp2_digit2);
+        mDisplay2_third_digit.setText(mGame.mDisp2_digit3);
+
+
     }
 }
