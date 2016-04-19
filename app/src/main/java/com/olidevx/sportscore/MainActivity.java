@@ -34,14 +34,22 @@ public class MainActivity extends AppCompatActivity {
         mLayoutHome.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                // Does Nothing yet
+                // Invoques the ScoreChange Method passing "1" for the Home Team and "true" to increase
+                mGame.ScoreChange(1,true);
+
+                // Then asks to refresh the screen
+                RefreshScreen();
             }
         });
 
         mLayoutVisit.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
-                // Does Nothing yet
+                // Invoques the ScoreChange Method passing "2" for the Visit Team and "true" to increase
+                mGame.ScoreChange(2,true);
+
+                // Then asks to refresh the screen
+                RefreshScreen();
             }
         });
 
