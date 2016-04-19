@@ -23,9 +23,9 @@ public class Display {
 
         if ((Points > 10) && (Points < 100)) {
             // TODO: Include this method to transform 2 digit numbers to 3 strings
-
-
-            Digit_3="";
+            Digit_2 = Integer.toString(Points - (Points % 10));
+            Digit_1 = Integer.toString(Points - (Points - ((Points % 10))*10));
+            Digit_3 = "";
         }
 
         if ((Points > 99) && (Points < 1000)){
