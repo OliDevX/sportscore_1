@@ -23,9 +23,15 @@ public class Display {
 
         if ((Points > 9) && (Points < 100)) {
             Digit_1 = Integer.toString(Points % 10);
-            Digit_2 = Integer.toString((Points - (Points % 10)/10));
+            Digit_2 = Integer.toString((Points - (Points % 10))/10);
             Digit_3 = "";
-
         }
+
+        if ((Points > 99) && (Points <1000)){
+            Digit_1 = Integer.toString((Points % 100)%10);
+            Digit_2 = Integer.toString(((Points % 100) - ((Points % 100)%10))/10);
+            Digit_3 = Integer.toString((Points - (Points % 100))/100);
+        }
+
     }
 }
