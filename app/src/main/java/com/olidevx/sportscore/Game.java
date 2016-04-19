@@ -55,7 +55,7 @@ public class Game {
     }
 
     // ScoreChange method is created to make scorechanges happen and subsecuently trigger all other actions in Team and Display classes
-    public void ScoreChange(){
-        // TODO: Complete ScoreChange method inside Game class
+    public void ScoreChange(int int_score_id, boolean bool_increase){
+        // TODO: Complete this section
     }
 }

@@ -14,4 +14,14 @@ public class Team {
     public void SetPoints(int points){
         mPoints = points;
     }
+
+    // Method to increase points for each team
+    public void onIncreasePoint () {
+        if (mPoints < 999){
+            mPoints++;
+        }
+    }
+
+
+
 }
