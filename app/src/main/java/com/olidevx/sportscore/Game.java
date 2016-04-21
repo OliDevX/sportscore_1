@@ -26,10 +26,17 @@ public class Game {
     public String mDispSet_digit2 = new String();
 
     // Initializes game, puts team's points to zero and calls for display updates
-    public void InitialGameSet(){
+   // public void InitialGameSet(){
         // Puts points to "0" on each team
-        mTeam1.SetPoints(0);
-        mTeam2.SetPoints(0);
+        //mTeam1.SetPoints(0);
+        //mTeam2.SetPoints(0);
+        //UpdateDisplays();
+    //}
+
+    public void SetScores(int points_team_1, int points_team_2, int set_number){
+        // Puts points on each team
+        mTeam1.SetPoints(points_team_1);
+        mTeam2.SetPoints(points_team_2);
         UpdateDisplays();
     }
 

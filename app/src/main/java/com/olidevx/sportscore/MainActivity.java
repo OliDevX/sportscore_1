@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Initializes the displays to "00" "00"
-        mGame.InitialGameSet();
+        mGame.SetScores(0,0,0);
 
         // Refreshes the displays on screen
         RefreshScreen();
