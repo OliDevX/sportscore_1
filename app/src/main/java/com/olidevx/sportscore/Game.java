@@ -47,7 +47,7 @@ public class Game {
         mDisplay2.SetPoints(mTeam2.mPoints);
 
         // mDisplaySet.SetPoints();
-        // TODO: Complete code for Set - Create Set Class
+        // TODO: Complete code for Set change
 
         // Passes info from the Display classes to the Game class
         mDisp1_digit1 = mDisplay1.Digit_1;
