@@ -5,15 +5,14 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Layout;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import junit.framework.Test;
-
-import org.w3c.dom.Text;
+// These last two imports were used for the exit dialog
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -157,5 +156,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // Dialog box to confirm exit from the application
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setMessage(R.string.exit_question_string)
+                .setCancelable(false)
+                .setPositiveButton(R.string.yes_string, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        MainActivity.this.finish();
+                    }
+                })
+                .setNegativeButton(R.string.no_string, null)
+                .show();
+    }
 
 }
