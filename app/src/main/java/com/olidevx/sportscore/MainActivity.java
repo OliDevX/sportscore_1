@@ -118,8 +118,24 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void RefreshScreen (){
+    // Created to save Score states when orientation changes
+    @Override
+    protected void onSaveInstanceState (Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("TEAM1_POINTS",mGame.mTeam1.mPoints);
+        outState.putInt("TEAM2_POINTS",mGame.mTeam2.mPoints);
+    }
 
+    // Created to restore Score states after orientation changes
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        mGame.SetScores(savedInstanceState.getInt("TEAM1_POINTS"),savedInstanceState.getInt("TEAM2_POINTS"),0);
+        RefreshScreen();
+    }
+
+    // Created to refresh screen every time score changes
+    public void RefreshScreen (){
         // Declare Displays to be updated
         TextView mDisplay1_first_digit = (TextView) findViewById(R.id.home_first_digit_textview);
         TextView mDisplay1_second_digit = (TextView) findViewById(R.id.home_second_digit_textview);
@@ -140,4 +156,6 @@ public class MainActivity extends AppCompatActivity {
         mDisplay2_third_digit.setText(mGame.mDisp2_digit3);
 
     }
+
+
 }
