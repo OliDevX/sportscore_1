@@ -156,6 +156,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // Dialog box to confirm exit from the application
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
