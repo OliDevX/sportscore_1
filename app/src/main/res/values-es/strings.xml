@@ -4,4 +4,7 @@
     <string name="home_label_string">LOCAL</string>
     <string name="visit_label_string">VISITANTE</string>
     <string name="set_label_string">PERIODO</string>
+    <string name="exit_question_string">¿Desea abandonar la aplicación?</string>
+    <string name="yes_string">Sí</string>
+    <string name="no_string">No</string>
 </resources>

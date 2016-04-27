@@ -4,4 +4,7 @@
     <string name="home_label_string">HOME</string>
     <string name="visit_label_string">VISIT</string>
     <string name="set_label_string">SET</string>
+    <string name="exit_question_string">Are you sure you want to exit?</string>
+    <string name="yes_string">Yes</string>
+    <string name="no_string">No</string>
 </resources>
